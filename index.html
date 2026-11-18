@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SCORM Player Host</title>
+  <link rel="stylesheet" href="player.css" />
+  <!-- No inline script: this page is CSP-friendly. -->
+  <script src="config.js"></script>
+  <script src="lib/jszip.min.js"></script>
+  <script src="scorm-api.js"></script>
+  <script src="player.js" defer></script>
+</head>
+<body>
+  <main id="stage" aria-live="polite">
+    <div id="status" class="status">Loading player…</div>
+  </main>
+</body>
+</html>

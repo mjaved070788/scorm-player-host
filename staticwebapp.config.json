@@ -1,0 +1,25 @@
+{
+  "globalHeaders": {
+    "Content-Security-Policy": "frame-ancestors 'self' https://groups.coca-cola.com https://teams.microsoft.com https://*.teams.microsoft.com https://*.office.com http://localhost:4322",
+    "X-Content-Type-Options": "nosniff"
+  },
+  "routes": [
+    {
+      "route": "/sw.js",
+      "headers": {
+        "Cache-Control": "no-cache",
+        "Service-Worker-Allowed": "/"
+      }
+    },
+    {
+      "route": "/config.js",
+      "headers": {
+        "Cache-Control": "no-cache"
+      }
+    }
+  ],
+  "mimeTypes": {
+    ".js": "text/javascript",
+    ".json": "application/json"
+  }
+}
